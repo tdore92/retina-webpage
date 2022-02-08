@@ -1,0 +1,338 @@
+.hero-image {
+  background-image: url("./images/AdobeStock_108407178.png");
+  background-color: blue;
+  background-position: 0% 80%;
+  overflow: hidden;
+  height: 730px; 
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.nav-logo-item {
+  height: 75px;
+  margin: 10px;
+}
+
+.hero-container {
+  color: white;  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 150px;
+}
+
+.hero-buttons {
+  margin-right: 10px;
+}
+
+#hidden-text-layer1, #hidden-text-layer2, #hidden-text-layer3, #hidden-text-layer4, #hidden-text-layer5, #hidden-text-layer6 {
+  visibility: hidden;
+  color: white;
+  background-color: green;
+  height: 270px;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  border-radius: 9px;
+}
+
+.main-text-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: -144px auto 0;
+}
+
+.category-card {  
+  color: white;
+  background-color: darkblue;
+  height: 260px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.category-image {
+  margin-bottom: 20px;
+}
+
+.category-button {
+  position: absolute;
+  bottom: 7%;
+}
+
+.text-chunk-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 40px 0px;
+}
+
+.form-container {
+  background-image: linear-gradient(180deg, grey, lightgray);
+  border-radius: 10px;
+  width: 60%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1; 
+}
+
+.form-double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex: 2;
+}
+
+.form-inputs {
+  background-color: lightgray;
+  height: 50px;
+  border-radius: 5px;
+  margin: 10px;
+  border: none;
+}
+
+.ashley-section {
+  height: 492px;
+  background-image: url("./images/Video.png");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ashley-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: -170px;
+}
+
+.achievements-section {
+  height: 500px;
+}
+
+.achievement-image {
+  height: 50%;
+}
+
+.achievements-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.text-chunk {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 0px; 
+}
+
+.blue-button {
+  border-radius: 5px;
+  background-color: #009EE0;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.submit-button {
+  margin-top: 100px;
+}
+
+.body-buttons {
+  text-align: center;
+  margin: 20px;
+}
+
+.page-font {
+  font-style: italic;
+}
+
+.text-div {
+  visibility: hidden;
+}
+
+.footer-image {
+  background-image: url('./images/Footer\ bkg.png');
+  height: 300px;
+  border-top: #009EE0 5px solid;
+}
+
+.footer-padding {
+  padding: 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-column-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column-two {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-column-four {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.socials {
+  height: 60%;
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+  }
+  
+  .grow:hover { 
+  transform: scale(1.1); 
+  }
+
+  .nav-item:hover {
+    text-decoration: underline #009EE0 2px;
+  }
+
+  .footer-arrow{
+    display: flex;
+    justify-content: flex-end;
+    margin: -5px 10px;
+    height: 50px;
+  }
+
+  @media only screen and (max-width: 500px) { 
+
+    .nav-container {
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-image {
+      background-position:initial;
+      height: fit-content;
+      border-bottom: solid 5px #009EE0;
+    }
+
+    .hero-container {
+      align-items: center;
+      text-align: center;
+    }
+
+    .nav-logo-item {
+      display: none;
+    }
+
+    .hero-button-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .category-container {
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 20px 0px 0px 0px;
+    }
+
+    .category-card {
+      margin: 10px;
+    }
+
+    .category-button {
+      position:relative;
+      bottom: -10%;
+    }
+
+    .ashley-pin, .ashley-comma {
+      display: none;
+    }
+
+    .ashley-profile {
+      height: 250px;
+      padding-bottom: 50px;
+    }
+    
+    .ashley-section {
+      background-position:center;
+    }
+
+  .achievements-section {
+    height: fit-content;
+  }
+
+  .achievements-card-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-image {
+    height: fit-content;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    align-items:unset;
+    justify-content: left
+  }
+
+  .footer-column-one, .footer-column-two, .footer-column-three {
+    flex-direction: row;
+    margin: 10px 5px 10px 5px;
+    font-size: 0.7rem;
+  }
+
+  .footer-column-three {
+    justify-content: left;
+  }
+
+  .footer-column-four {
+    display: none;
+  }
+}
