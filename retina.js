@@ -43,34 +43,34 @@ window.addEventListener('scroll', function (e) {
 
 function showText(div) {
   if (div === 'btn1') {
-    console.log('click detected')
     document.getElementById('hidden-text-layer1').style.visibility = 'visible'
-    document.getElementById('hidden-text-layer2').style.visibility = 'hidden'
   } else if (div === 'btn2') {
-    document.getElementById('hidden-text-layer1').style.visibility = 'hidden'
     document.getElementById('hidden-text-layer2').style.visibility = 'visible'
   } else if (div === 'btn3') {
-    document.getElementById('hidden-text-layer1').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer2').style.visibility = 'hidden'
     document.getElementById('hidden-text-layer3').style.visibility = 'visible'
   } else if (div === 'btn4') {
-    document.getElementById('hidden-text-layer1').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer2').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer3').style.visibility = 'hidden'
     document.getElementById('hidden-text-layer4').style.visibility = 'visible'
   } else if (div === 'btn5') {
-    document.getElementById('hidden-text-layer1').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer2').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer3').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer4').style.visibility = 'hidden'
     document.getElementById('hidden-text-layer5').style.visibility = 'visible'
   } else if (div === 'btn6') {
-    document.getElementById('hidden-text-layer1').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer2').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer3').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer4').style.visibility = 'hidden'
-    document.getElementById('hidden-text-layer5').style.visibility = 'hidden'
     document.getElementById('hidden-text-layer6').style.visibility = 'visible'
+  }
+}
+
+function hideText(div) {
+  if (div === 'hidebtn1') {
+    console.log('Hide click detected')
+    document.getElementById('hidden-text-layer1').style.visibility = 'hidden'
+  } else if (div === 'hidebtn2') {
+    document.getElementById('hidden-text-layer2').style.visibility = 'hidden'
+  } else if (div === 'hidebtn3') {
+    document.getElementById('hidden-text-layer3').style.visibility = 'hidden'
+  } else if (div === 'hidebtn4') {
+    document.getElementById('hidden-text-layer4').style.visibility = 'hidden'
+  } else if (div === 'hidebtn5') {
+    document.getElementById('hidden-text-layer5').style.visibility = 'hidden'
+  } else if (div === 'hidebtn6') {
+    document.getElementById('hidden-text-layer6').style.visibility = 'hidden'
   }
 }
 
